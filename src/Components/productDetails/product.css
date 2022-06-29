@@ -1,0 +1,11 @@
+
+img{
+    transition: all .5s;
+    cursor: grab;
+    overflow: hidden;
+}
+
+img:hover {
+    /* transform: scale(1.1); */
+    /* transform: scale(1.1); */
+}

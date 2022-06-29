@@ -1,0 +1,8 @@
+.styl {
+ color: #fff !important;
+ padding: 11px !important;
+ margin: 8px !important ;
+ text-decoration: none;
+ cursor: pointer;
+ text-transform: capitalize;
+}
