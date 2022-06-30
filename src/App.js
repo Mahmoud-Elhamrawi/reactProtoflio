@@ -8,6 +8,7 @@ import View from "./Components/view.jsx";
 import NotFound from "./Components/notfound/NotFound.jsx";
 import Prodocts from './Components/Producsts/prodocts';
 import ProductDetails from './Components/productDetails/ProductDetails';
+import Todo from './Components/todo/Todo';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/prodocts" element={<Prodocts />} />
           <Route path="/ProductDetails/:id" element={<ProductDetails />} />
           <Route path="/counter" element={<View />} />
+          <Route path="/todo" element={<Todo />} />
           <Route path="*" element={< NotFound/>} />
           </Routes>
       </div>

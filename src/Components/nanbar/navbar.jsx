@@ -24,6 +24,7 @@ import './navbar.css';
                 <ul className=" styl dropdown-menu" aria-labelledby="navbarDropdown">
                     <li><NavLink className=" styl dropdown-item" to="/prodocts">Products pro.</NavLink></li>
                     <li><NavLink className=" styl dropdown-item" to="/counter">counter pro.</NavLink></li>
+                    <li><NavLink className=" styl dropdown-item" to="/todo">ToDo List pro.</NavLink></li>
                 </ul>
            </li>
 

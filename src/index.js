@@ -6,17 +6,66 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+
+//inial stat
+let inilStat = {
+  todos:[
+  
+  ],
+};
+
+//stote
+let store = createStore(ADD);
+
+
+//action
+export  const  addTodoAction=(payload)=>{
+  return{ 
+    type:"ADD_TODO",
+    payload 
+
+  } 
+}
+
+export const  deleteTodoAction=(payload)=>{
+  return{ 
+    type:"DELETE_TODO",
+    payload
+  }
+}  
+
+//reducer
+function ADD (inial = inilStat , action)
+{
+  switch(action.type)
+  {
+    case 'ADD_TODO':
+      return {...inial,todos:[...inial.todos , action.payload]};
+      case 'DELETE_TODO':
+        return {...inial,todos:[...inial.todos.filter((item,index)=> index !== action.payload) ]};
+        default :
+        return inial;
+  }
+}
+
+
+
+
+
 root.render(
   <React.StrictMode>
+    <Provider store={store}>
       <BrowserRouter>
          <App />
     </BrowserRouter>
+    </Provider>
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+
 reportWebVitals();
