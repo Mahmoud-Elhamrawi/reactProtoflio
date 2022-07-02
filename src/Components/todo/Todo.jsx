@@ -3,7 +3,7 @@ import TodoForm from "./TodoForm";
 import TodoList from "./TodoList";
 import './Todo.css';
 import { useDispatch,useSelector } from 'react-redux';
-import { addTodoAction ,deleteTodoAction} from "../..";
+import { addTodoAction ,deleteTodo} from "../../";
 
 
 

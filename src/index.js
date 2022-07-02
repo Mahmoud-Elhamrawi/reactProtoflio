@@ -37,7 +37,7 @@ export const  deleteTodoAction=(payload)=>{
     type:"DELETE_TODO",
     payload
   }
-}  
+} 
 
 //reducer
 function ADD (inial = inilStat , action)

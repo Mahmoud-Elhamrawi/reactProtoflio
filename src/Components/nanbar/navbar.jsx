@@ -18,13 +18,14 @@ import './navbar.css';
             <NavLink className='styl'  to="/contact">Contact</NavLink>
             
             <li className="nav-item dropdown">
-               <a className="styl  nav-link dropdown-toggle" to="/project" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               <a className="styl  nav-link dropdown-toggle" to="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                projects
                 </a>
                 <ul className=" styl dropdown-menu" aria-labelledby="navbarDropdown">
                     <li><NavLink className=" styl dropdown-item" to="/prodocts">Products pro.</NavLink></li>
                     <li><NavLink className=" styl dropdown-item" to="/counter">counter pro.</NavLink></li>
                     <li><NavLink className=" styl dropdown-item" to="/todo">ToDo List pro.</NavLink></li>
+                    <li><NavLink className=" styl dropdown-item" to="/register">register pro.</NavLink></li>
                 </ul>
            </li>
 
